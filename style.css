@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    "titre ."
+    "image texts"
+    "footer footer";
+}
+
+.titre
+{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    grid-area: titre;
+    color: #333333;
+    padding-left: 77px;
+    padding-top: 50px;
+    font-size: 24px;
+    letter-spacing: -0.08em;
+}
+
+.first_p
+{
+    height: auto;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 64px;
+    grid-area: texts;
+    color: #333333;
+    padding-top: 160px;
+    letter-spacing: -0.035em;
+}
+
+.second_p
+{
+    height: auto;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    grid-area: texts;
+    color: #4F4F4F;
+    padding-top: 400px;
+    letter-spacing: -0.035em;
+}
+
+.btn
+{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    grid-area: texts;
+    height: 68px;
+    width: 216px;
+    color:white;
+    background-color: #333333;
+    margin-top: 580px;
+    letter-spacing: -0.035em;
+}
+
+.image
+{
+    height: 447.4263916015625px;
+    width: 539.2236938476562px;
+    grid-area: image;
+    place-self: center;
+}    
+
+footer
+{
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    grid-area: footer;
+    justify-self: center;
+    color: #BDBDBD;
+    font-size: 14px;
+    padding-top: 60px;
+}
+
+.bold_underline
+{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1107px) {
+
+    .container
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 50% 40% 5%;
+        grid-template-areas:
+        "titre"
+        "image"
+        "texts"
+        "footer";
+    }
+
+    .image
+    {
+        height: 350px;
+        width: auto;
+    }
+
+    .first_p
+    {
+        padding-top: 0px;
+        font-size: 48px;
+        padding-left: 30px;
+    }
+
+    .second_p
+    {
+        padding-top: 160px;
+        font-size: 18px;
+        padding-left: 30px;
+    }
+
+    .btn
+    {
+        margin-top: 300px;
+        margin-left: 30px;
+    }
+
+    footer
+    {
+        padding-top: 20px;
+    }
+}
